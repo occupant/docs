@@ -3,10 +3,9 @@ const Mousetrap = require('mousetrap')
 
 window.Vue = require('vue')
 
-Vue.component('responsive-code-sample', require('./components/ResponsiveCodeSample.vue'))
-Vue.component('v-component', require('./components/MetaComponent.vue'))
-Vue.component('class-table', require('./components/ClassTable.vue'))
-Vue.component('table-of-contents', require('./components/TableOfContents.vue'))
+Vue.component('responsive-code-sample', require('./components/ResponsiveCodeSample.vue').default)
+Vue.component('table-of-contents', require('./components/TableOfContents.vue').default)
+Vue.component('video-player', require('./components/VideoPlayer.vue').default)
 
 
 const app = new Vue({
